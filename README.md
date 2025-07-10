@@ -25,7 +25,6 @@ Topik: Pembuatan halaman web biodata sederhana menggunakan HTML
 -----------------------------------------------------------------------------------------------------
 📌 Catatan
 Proyek ini cocok sebagai latihan dasar untuk memahami struktur HTML dan penggunaan elemen-elemen seperti:
-" <table>
+<table>
 <style>
 <div> dan heading (<h1> - <h4>)
-"
