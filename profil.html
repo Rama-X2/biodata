@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Website Profile PERTAMA</title>
+<link rel="Shortcut Icon" href="gambar\gambar.jpg" type="image/x-jpg" />
+<style>
+  body {
+    background-color: #7B68EE;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .profile-container {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 32px 28px;
+  }
+  .profile-title {
+    text-align: center;
+    color: #7B68EE;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .profile-table {
+    width: 100%;
+    font-size: 0.97em; 
+    margin-bottom: 18px;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+  }
+  .profile-table td {
+    padding: 0 6px 0 0;
+    vertical-align: top;
+  }
+  .profile-label {
+    color: #5a4fcf;
+    font-weight: bold;
+    text-align: right;
+    width: 48%;
+    white-space: nowrap;
+    padding-right: 10px;
+  }
+  .profile-value {
+    color: #222;
+    font-weight: bold;
+    width: 52%;
+    text-align: left;
+    word-break: break-word;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 18px;
+    background: #7B68EE;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .back-link:hover {
+    background: #5a4fcf;
+  }
+</style>
+</head>
+<body>
+<div class="profile-container">
+  <div class="profile-title">DATA PRIBADI</div>
+  <hr style="border: none; border-top: 1.5px solid #7B68EE; margin-bottom: 18px;">
+  <table class="profile-table">
+    <tr>
+      <td class="profile-label">Nama :</td>
+      <td class="profile-value">Ade Ramadhani Putra</td>
+    </tr>
+    <tr>
+      <td class="profile-label">NIM :</td>
+      <td class="profile-value">202240045</td>
+    </tr>
+    <tr>
+      <td class="profile-label">Prodi :</td>
+      <td class="profile-value">Informatika</td>
+    </tr>
+    <tr>
+      <td class="profile-label">Tempat Tanggal Lahir :</td>
+      <td class="profile-value">Sukabumi, 29 Oktober 2005</td>
+    </tr>
+    <tr>
+      <td class="profile-label">Agama :</td>
+      <td class="profile-value">ISLAM</td>
+    </tr>
+    <tr>
+      <td class="profile-label">Hoby :</td>
+      <td class="profile-value">Tech Enthusiast / Hardware &amp; Software Tinkerer</td>
+    </tr>
+  </table>
+  <div style="text-align:center;">
+    <a href="index.html" class="back-link">Kembali ke Awal</a>
+  </div>
+</div>
+<script>
+  // nyegah ngeklik kanan di semua halaman nye :v
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // sama aja buat nyegah ngedrag si gambar ama ngeblok download gambar nyoo lagi :)
+  document.querySelectorAll('img').forEach(function(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('mousedown', function(e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function(e) { e.preventDefault(); });
+  });
+
+  // nyegah ngeblok ama salin teks lagi :v
+  document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+  document.addEventListener('copy', function(e) { e.preventDefault(); });
+  document.addEventListener('cut', function(e) { e.preventDefault(); });
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && ['a', 'c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>

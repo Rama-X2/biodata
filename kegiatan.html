@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>Kegiatan Ade Ramadhani Putra</title>
+<link rel="Shortcut Icon" href="gambar\gambar.jpg" type="image/x-jpg" />
+<style>
+  body {
+    background-color: #7B68EE;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .main-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  }
+  .activity-list {
+    max-width: 880px;
+    margin: 0 auto 24px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+    justify-content: center;
+  }
+  .activity-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(123,104,238,0.13), 0 1.5px 8px rgba(0,0,0,0.07);
+    width: 350px;
+    padding: 22px 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2.5px solid #edeaff;
+  }
+  .activity-card:hover {
+    transform: translateY(-6px) scale(1.025);
+    box-shadow: 0 10px 28px rgba(123,104,238,0.18), 0 6px 18px rgba(0,0,0,0.13);
+    border-color: #b3a6f7;
+  }
+  .activity-img {
+    width: 100%;
+    max-width: 320px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    border: 2px solid #7B68EE;
+    background: #f3f1ff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    image-rendering: auto; 
+  }
+  .activity-img:hover {
+    box-shadow: 0 0 0 4px #b3a6f7;
+  }
+  .activity-title {
+    color: #7B68EE;
+    font-size: 1.13em;
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+  .activity-desc {
+    color: #333;
+    font-size: 0.98em;
+    text-align: justify;
+    margin-bottom: 4px;
+    line-height: 1.45; 
+    letter-spacing: normal; 
+    word-spacing: normal; 
+  }
+  .back-link {
+    display: inline-block;
+    margin: 24px auto 24px auto;
+    padding: 10px 28px;
+    background: #7B68EE;
+    color: #fff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    text-align: center;
+    border: 2px solid #edeaff;
+  }
+  .back-link:hover {
+    background: #5a4fcf;
+  }
+  /* inihhhhh Modal Styles nye :v */
+  .modal-img-bg {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(40,30,80,0.65);
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .modal-img-bg.active {
+    display: flex;
+  }
+  .modal-img-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(123,104,238,0.22);
+    border: 4px solid #7B68EE;
+    background: #fff;
+    animation: modalZoom 0.18s;
+  }
+  @keyframes modalZoom {
+    from { transform: scale(0.85);}
+    to { transform: scale(1);}
+  }
+  .modal-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    text-shadow: 0 2px 8px #7B68EE, 0 1px 2px #000;
+    transition: color 0.2s;
+  }
+  .modal-close:hover {
+    color: #ffb3b3;
+  }
+  @media (max-width: 600px) {
+    .activity-card { width: 98vw; max-width: 98vw; }
+    .activity-img { max-width: 98vw; }
+    .modal-img-content { max-width: 98vw; }
+    .modal-close { right: 18px; top: 12px; }
+  }
+  /* biar gk di blok teksnya (nyuri teks saya :v) */
+  body, * {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+  }
+</style>
+</head>
+<body>
+<div class="main-title">Kegiatan Ade Ramadhani Putra</div>
+<div class="activity-list">
+
+  <!-- 1 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Overclocking1.jpg" alt="Overclocking Chipset APU" class="activity-img">
+    <div class="activity-title">Overclocking Chipset APU</div>
+    <div class="activity-desc">
+      Salah satu aktivitas favorit saya adalah melakukan overclocking pada sistem PC. Di sini saya melakukan pengujian intensif menggunakan berbagai tool monitoring untuk mencari batas maksimal performa CPU dan GPU. Selalu menarik mengatur voltase dan frekuensi untuk mendapatkan FPS ekstra tanpa overheat.
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/overclock.webp" alt="Overclock Extreme" class="activity-img">
+    <div class="activity-title">Overclock Extreme</div>
+    <div class="activity-desc">
+      Salah satu sesi eksperimen ekstrem saya, di mana sistem mengalami overheat karena setting voltase dan frekuensi yang terlalu tinggi. Dari sini saya belajar pentingnya pendinginan dan manajemen daya yang baik untuk menjaga kestabilan sistem.
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Service Elektronik.jpg" alt="Servis Elektronik" class="activity-img">
+    <div class="activity-title">Servis Elektronik</div>
+    <div class="activity-desc">
+      Selain utak-atik software, saya juga rutin mengerjakan servis hardware seperti memperbaiki rangkaian regulator, ganti IC, atau pasang kapasitor. Aktivitas ini jadi salah satu sumber pemasukan dan latihan tangan agar tetap terampil.
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Membuat Host Server untuk Game.jpg" alt="Membuat Host Server untuk Game" class="activity-img">
+    <div class="activity-title">Membuat Host Server untuk Game</div>
+    <div class="activity-desc">
+      Sebagai gamer teknikal, saya sering mengalami masalah latency saat bermain game luar negeri yang server-nya berada di luar Indonesia. Karena itu, saya berinisiatif membuat host server sendiri di dalam negeri. Tujuannya simpel: supaya gameplay lebih lancar tanpa delay. Proyek ini sekaligus menjadi ajang belajar tentang routing, port mapping, serta optimasi resource server untuk kebutuhan multiplayer.
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Benerin Motor.jpg" alt="Servis Motor" class="activity-img">
+    <div class="activity-title">Servis Motor</div>
+    <div class="activity-desc">
+      Waktu luang saya manfaatkan juga untuk membongkar dan memperbaiki motor sendiri. Saya percaya bahwa rasa ingin tahu dan semangat belajar tak terbatas hanya pada elektronik, tapi juga pada sistem mekanik seperti kendaraan. Dari sistem kelistrikan sampai injektor, saya pelajari secara otodidak.
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Kuliah.jpg" alt="Berkuliah" class="activity-img">
+    <div class="activity-title">Berkuliah</div>
+    <div class="activity-desc">
+      Meskipun lebih sering mengutak-atik teknologi, saya tetap menjalani kewajiban sebagai mahasiswa aktif. Saya serius mengikuti perkuliahan, terutama mata kuliah yang berkaitan dengan jaringan, sistem digital, dan pemrograman.
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Membuat Script untuk Overclocking.jpg" alt="Bikin Script Sendiri Buat OC" class="activity-img">
+    <div class="activity-title">Membuat Script untuk Overclock</div>
+    <div class="activity-desc">
+      Biar praktis dan lebih fleksibel, saya membuat sendiri script untuk overclocking CPU/GPU berbasis CLI atau automation tools. Ini mempermudah saya untuk melakukan tuning otomatis tergantung beban kerja atau kebutuhan performa.
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="activity-card">
+    <img src="gambar-rama-server/Membuat Config Trojan untuk Server.jpg" alt="Membuat Konfigurasi Server Sendiri" class="activity-img">
+    <div class="activity-title">Membuat Konfigurasi Server Pribadi</div>
+    <div class="activity-desc">
+      Saya mengelola beberapa server pribadi yang berjalan menggunakan konfigurasi khusus, termasuk sistem trojan-go/V2Ray untuk tunneling dan VPN. Konfigurasi ini penting untuk menjaga stabilitas dan keamanan koneksi saat eksperimen jaringan.
+    </div>
+  </div>
+
+</div>
+<div style="text-align:center;">
+  <a href="index.html" class="back-link">Kembali ke Awal</a>
+</div>
+
+<!-- buat Modal Preview Imagenye lagi -->
+<div class="modal-img-bg" id="modalImgBg" onclick="closeModalImg(event)">
+  <span class="modal-close" id="modalCloseBtn" title="Tutup">&times;</span>
+  <img src="" alt="Preview" class="modal-img-content" id="modalImgContent">
+</div>
+<script>
+  // buat Modal Preview Logicnyeee
+  const modalBg = document.getElementById('modalImgBg');
+  const modalImg = document.getElementById('modalImgContent');
+  const closeBtn = document.getElementById('modalCloseBtn');
+  document.querySelectorAll('.activity-img').forEach(img => {
+    img.addEventListener('click', function(e) {
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      modalBg.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeModalImg(e) {
+    // buat nutup layout atau popup kalo ngeklik bgnya atau tombol celoseeeee :v
+    if (e.target === modalBg || e.target === closeBtn) {
+      modalBg.classList.remove('active');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+  }
+  // buat nutup pake tombol ESC :)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && modalBg.classList.contains('active')) {
+      modalBg.classList.remove('active');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+  });
+  // buat nyegah ngeklik kanan di semua halamannye :v
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // nahh ini pula buat nyegah ngedrag si gambar ama blok download gambar nyoo :v
+  document.querySelectorAll('img').forEach(function(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('mousedown', function(e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function(e) { e.preventDefault(); });
+  });
+
+  // sama sih ini juga fungsinya buat mencegah seleksi & salin/cut/copy teks :v
+  document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+  document.addEventListener('copy', function(e) { e.preventDefault(); });
+  document.addEventListener('cut', function(e) { e.preventDefault(); });
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && ['a', 'c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>

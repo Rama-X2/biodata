@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Tentang Saya</title>
+<link rel="Shortcut Icon" href="gambar\gambar.jpg" type="image/x-jpg" />
+<style>
+  body {
+    background-color: #7B68EE;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 32px auto 32px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 32px 28px 32px 28px;
+  }
+  .main-title {
+    text-align: center;
+    color: #7B68EE;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+  .section-title {
+    color: #5a4fcf;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    border-left: 5px solid #7B68EE;
+    padding-left: 10px;
+    background: #f3f1ff;
+    border-radius: 4px;
+  }
+  .profile-name {
+    color: #222;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .profile-content {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 18px;
+    line-height: 1.7;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 8px 18px;
+    background: #7B68EE;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .back-link:hover {
+    background: #5a4fcf;
+  }
+  /* buat nyegah nyeleksi atau ngeblok keknya di teks semua halaman nyooooooo :v */
+  body, .container, .profile-container, .main-title, .section-title, .profile-content, .profile-table, .profile-label, .profile-value, .foto-title, .foto-caption, .activity-title, .activity-desc, .activity-card, .foto-card {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="main-title">Tentang Saya</div>
+
+  <div class="section-title">Profil Mahasiswa - Ade Ramadhani Putra</div>
+  <div class="profile-content">
+    Saya adalah mahasiswa aktif di Program Studi Informatika, Universitas Linggabuana PGRI Sukabumi. Minat dan ketertarikan saya sangat kuat pada bidang teknologi, khususnya pada aspek rekayasa perangkat lunak (software) dan perangkat keras (hardware). Ketekunan saya dalam dunia teknologi tidak hanya terbatas pada teori kampus, tetapi saya juga aktif melakukan eksperimen dan pengembangan mandiri di luar jam kuliah.
+  </div>
+
+  <div class="section-title">Kemampuan dan Pengalaman Teknikal</div>
+  <div class="profile-content">
+    Saya memiliki hobi dan keahlian dalam modifikasi perangkat elektronik, mulai dari software hingga hardware. Salah satu proyek modifikasi yang pernah saya lakukan adalah mengembangkan ulang charger KW untuk laptop agar memiliki sistem grounding yang lebih aman dan stabil. Saya tidak hanya memodifikasi secara fungsional, tetapi juga mendesain ulang body, sirkuit, dan menambahkan komponen-komponen penting seperti resistor, kapasitor, dan filter agar perangkat tersebut lebih efisien dan aman digunakan.<br><br>
+    Dalam hal software dan sistem, saya sangat tertarik pada pengembangan dan tuning sistem operasi. Semua perangkat saya, baik laptop maupun smartphone, telah saya modifikasi dari tingkat OS, kernel, hingga sistem manajemen daya. Saya mengatur voltase, ampere per core, frekuensi prosesor, dan TDP secara manual untuk mencapai performa tinggi dengan temperatur yang tetap terjaga. Bidang ini menjadi fokus utama saya karena saya percaya bahwa performa optimal bisa dicapai tanpa harus mengorbankan efisiensi energi dan umur perangkat.
+  </div>
+
+  <div class="section-title">Kegiatan Profesional & Sampingan</div>
+  <div class="profile-content">
+    Di luar aktivitas perkuliahan, saya juga membuka usaha jasa servis perangkat elektronik. Walaupun saya menangani berbagai jenis perangkat, mayoritas pekerjaan saya berfokus pada perbaikan HP, laptop, dan PC. Pekerjaan ini memberi saya pengalaman langsung terhadap berbagai jenis kerusakan hardware maupun software, serta keterampilan troubleshooting yang sangat terasah.<br><br>
+    Selain itu, saya juga mengelola server RTRW-Net pribadi, yang saya bangun dan pelihara sendiri. Server ini saya gunakan untuk berbagai eksperimen jaringan, manajemen resource, dan kadang juga untuk membantu kebutuhan klien lokal.
+  </div>
+
+  <div class="section-title">Minat Lain dan Hobi Teknologi</div>
+  <div class="profile-content">
+    Waktu luang saya sering diisi dengan berbagai aktivitas teknikal, seperti overclocking, membuat sistem pendingin kustom, dan melakukan analisis mendalam terhadap chipset dan arsitektur perangkat. Saya suka memahami detail spesifikasi teknis dan membandingkan performa antar model atau generasi komponen.<br><br>
+    Walaupun tidak terlalu sering, saya juga menyempatkan diri bermain game, biasanya hanya saat sedang libur kerja atau tidak ada proyek teknikal yang sedang berjalan. Ketika bermain, saya juga menerapkan tuning sistem agar game berjalan dengan FPS tinggi namun tetap efisien secara termal.
+  </div>
+
+  <a href="index.html" class="back-link">Kembali ke Awal</a>
+</div>
+<script>
+  // nyegah ngeklik kanan di semua halaman nyoo lagi :)
+  document.addEventListener('contextmenu', function(e) {
+    // kalo ngeklik kanan digambar atau teks, blok nye
+    e.preventDefault();
+  });
+
+  // nyegah ngedrag gambar (nyuri :v) ama ngeblok download gambarnya
+  document.querySelectorAll('img').forEach(function(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('mousedown', function(e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function(e) { e.preventDefault(); });
+  });
+
+  // nah ini juga sama tapi lebih ke function aja biar nyegah shortcut salin nyooooooooo :v (Ctrl+C, Ctrl+X, Ctrl+A)
+  document.addEventListener('copy', function(e) { e.preventDefault(); });
+  document.addEventListener('cut', function(e) { e.preventDefault(); });
+  document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && ['a', 'c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>

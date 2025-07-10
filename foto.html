@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Koleksi Foto</title>
+<link rel="Shortcut Icon" href="gambar/gambar.jpg" type="image/x-jpg" />
+<style>
+  body {
+    background: #7B68EE;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .foto-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  }
+  .foto-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 28px;
+    max-width: 1100px;
+    margin: 0 auto 36px auto;
+  }
+  .foto-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(123,104,238,0.13), 0 1.5px 8px rgba(0,0,0,0.07);
+    padding: 18px 18px 14px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2.5px solid #edeaff;
+  }
+  .foto-card:hover {
+    transform: translateY(-5px) scale(1.025);
+    box-shadow: 0 10px 28px rgba(123,104,238,0.18), 0 6px 18px rgba(0,0,0,0.13);
+    border-color: #b3a6f7;
+  }
+  .foto-img {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #7B68EE;
+    background: #f3f1ff;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    image-rendering: high-quality;
+  }
+  @media (min-width: 600px) {
+    .foto-img {
+      height: 210px;
+      max-width: 320px;
+    }
+  }
+  .foto-caption {
+    color: #7B68EE;
+    font-weight: bold;
+    font-size: 1.08em;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .back-link {
+    display: inline-block;
+    margin: 24px auto 36px auto;
+    padding: 10px 28px;
+    background: #7B68EE;
+    color: #fff;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    text-align: center;
+    border: 2px solid #edeaff;
+  }
+  .back-link:hover {
+    background: #5a4fcf;
+  }
+  /* inihhhhh Modal Stylessssssssssssssssssssssssssssssssssssssssssssssssssssss nya :v */
+  .modal-img-bg {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(40,30,80,0.65);
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .modal-img-bg.active {
+    display: flex;
+  }
+  .modal-img-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(123,104,238,0.22);
+    border: 4px solid #7B68EE;
+    background: #fff;
+    animation: modalZoom 0.18s;
+  }
+  @keyframes modalZoom {
+    from { transform: scale(0.85);}
+    to { transform: scale(1);}
+  }
+  .modal-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    text-shadow: 0 2px 8px #7B68EE, 0 1px 2px #000;
+    transition: color 0.2s;
+  }
+  .modal-close:hover {
+    color: #ffb3b3;
+  }
+  @media (max-width: 600px) {
+    .foto-card { width: 98vw; max-width: 98vw; }
+    .foto-img { max-width: 98vw; }
+    .modal-img-content { max-width: 98vw; }
+    .modal-close { right: 18px; top: 12px; }
+  }
+  body, * {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -moz-user-select: none !important;
+  }
+  img {
+    pointer-events: auto;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+</style>
+</head>
+<body>
+<div class="foto-title">Foto-Foto Koleksi</div>
+<div class="foto-gallery">
+  <div class="foto-card">
+    <img src="gambar-rama-server/sebelum malam inagurasi.jpg" alt="Sebelum Malam Inagurasi" class="foto-img">
+    <div class="foto-caption">Sebelum Malam Inagurasi</div>
+  </div>
+  <div class="foto-card">
+    <img src="gambar-rama-server/malam inagurasi.jpg" alt="Malam Inagurasi" class="foto-img">
+    <div class="foto-caption">Malam Inagurasi</div>
+  </div>
+  <div class="foto-card">
+    <img src="gambar-rama-server/foto random 2.jpg" alt="Foto Random 2" class="foto-img">
+    <div class="foto-caption">Foto Random 2</div>
+  </div>
+  <div class="foto-card">
+    <img src="gambar-rama-server/foto random 4.jpg" alt="Foto Random 4" class="foto-img">
+    <div class="foto-caption">Foto Random 4</div>
+  </div>
+  <div class="foto-card">
+    <img src="gambar-rama-server/foto random 3.jpg" alt="Foto Random 3" class="foto-img">
+    <div class="foto-caption">Foto Random 3</div>
+  </div>
+  <div class="foto-card">
+    <img src="gambar-rama-server/foto random.jpg" alt="Foto Random" class="foto-img">
+    <div class="foto-caption">Foto Random</div>
+  </div>
+</div>
+<div style="text-align:center;">
+  <a href="index.html" class="back-link">Kembali ke Awal</a>
+</div>
+
+<!-- ini buat Preview gambarnyo :v -->
+<div class="modal-img-bg" id="modalImgBg" onclick="closeModalImg(event)">
+  <span class="modal-close" id="modalCloseBtn" title="Tutup">&times;</span>
+  <img src="" alt="Preview" class="modal-img-content" id="modalImgContent">
+</div>
+<script>
+  // ini buat Modal Preview si Logicnya
+  const modalBg = document.getElementById('modalImgBg');
+  const modalImg = document.getElementById('modalImgContent');
+  const closeBtn = document.getElementById('modalCloseBtn');
+  document.querySelectorAll('.foto-img').forEach(img => {
+    img.addEventListener('click', function(e) {
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      modalBg.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeModalImg(e) {
+    // ini buat nutup layout atow popup kalo ngeklik bgnya atau tombol close :v
+    if (e.target === modalBg || e.target === closeBtn) {
+      modalBg.classList.remove('active');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+  }
+  // ini biar bisa nutup pake tombol ESC :)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && modalBg.classList.contains('active')) {
+      modalBg.classList.remove('active');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+  });
+</script>
+<script>
+  // ini buat nyegah ngeklik kanan di semua halamannya :v
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // ini buat nyegah drag gambar di semua halamannya :v
+  document.querySelectorAll('img').forEach(function(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('mousedown', function(e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function(e) { e.preventDefault(); });
+  });
+
+  // nah ini juga buat nyegah seleksi atau salin,cut,copy teks :v
+  document.addEventListener('selectstart', function(e) { e.preventDefault(); });
+  document.addEventListener('copy', function(e) { e.preventDefault(); });
+  document.addEventListener('cut', function(e) { e.preventDefault(); });
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && ['a', 'c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>
