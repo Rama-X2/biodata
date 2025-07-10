@@ -17,11 +17,15 @@ Repositori ini berisi proyek tugas kuliah pada pertemuan ke-11 yang menampilkan 
 ------------------------------------------------------------------------------------
 🧑‍🎓 Informasi Tambahan
 Mata Kuliah: Pemrograman Web Dasar
+
 Pertemuan: Ke-11
+
 Topik: Pembuatan halaman web biodata sederhana menggunakan HTML
 
+-----------------------------------------------------------------------------------------------------
 📌 Catatan
 Proyek ini cocok sebagai latihan dasar untuk memahami struktur HTML dan penggunaan elemen-elemen seperti:
-<table>
+" <table>
 <style>
 <div> dan heading (<h1> - <h4>)
+"
